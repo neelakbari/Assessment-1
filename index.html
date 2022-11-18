@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment-1</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h3>Student Registration Form</h3>
+    <div class="container">
+      <div class="form">
+        <!-- form start -->
+        <form action="noaction.php">
+          <!-- presonal details start  -->
+          <div class="field">
+            <label for="First_Name">First Name:</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter your first name"
+              required
+              autofill
+              minlength="3"
+              maxlength="6"
+              pattern="[A-Za-z]+"
+            />
+          </div>
+          <div class="field">
+            <label for="Last_Name">Last Name:</label>
+            <input
+              type="text"
+              name="lname"
+              placeholder="Enter your last name"
+              required
+              autofill
+              minlength="3"
+              maxlength="6"
+              pattern="[A-Za-z]+"
+            />
+          </div>
+          <div class="field">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="fname"
+              placeholder="it should contain @"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="mobile">Mobile:</label>
+            <input
+              type="tel"
+              name="mobile"
+              placeholder="only 10 digits are allowed"
+              maxlength="10"
+              pattern="[0-9]{10}"
+              required
+            />
+          </div>
+          <div class="gender">
+            <label for="Gender" class="gender">Gender:</label>
+            <div class="genderval">
+              <input
+                type="radio"
+                name="Gender"
+                class="gender"
+                id="male"
+              /><label for="male">Male</label>
+              <input
+                type="radio"
+                name="Gender"
+                class="gender"
+                id="female"
+              /><label for="female">Female</label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="DOB">Date Of Birth:</label>
+            <input type="date" name="date" placeholder="mm/dd/yyyy" />
+          </div>
+          <!-- presonal details ends  -->
+          <!-- address starts -->
+          <div class="field">
+            <label for="address">Address:</label>
+            <textarea name="address" id="" cols="71" rows="10"></textarea>
+          </div>
+          <div class="field">
+            <label for="City">City:</label>
+            <input type="text" name="city" />
+          </div>
+          <div class="field">
+            <label for="PIN">Area PIN:</label>
+            <input type="tel" name="PIN" maxlength="6" />
+          </div>
+          <div class="field">
+            <label for="state">State:</label>
+            <input type="text" name="state" />
+          </div>
+          <!-- addrress ends  -->
+          <!-- Qualification & specialization starts  -->
+          <div class="qual">
+            <label for="Qualification">Qualification:</label>
+            <select name="qualification" id="qualification">
+              <option value="" disabled selected>Qualification</option>
+              <option value="">S.S.C</option>
+              <option value="">H.S.C</option>
+              <option value="">Graduate</option>
+            </select>
+          </div>
+          <div class="specialization">
+            <div id="id">
+              <label for="First_Name">Specialization:</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="Specialization" id="cs" />
+              <label for="cs"> Computer Science </label><br />
+              <input type="checkbox" name="Specialization" id="it" />
+              <label for="it"> Information Technology </label><br />
+              <input type="checkbox" name="Specialization" id="ca" />
+              <label for="ca"> Computer Architect </label><br />
+              <input type="checkbox" name="Specialization" id="ts" />
+              <label for="ts"> Telecommunication </label>
+            </div>
+          </div>
+          <!-- Qualification & specialization ends  -->
+          <div class="field">
+            <label for="password">Password:</label>
+            <input type="password" name="pass" />
+          </div>
+          <input type="submit" value="Registered" id="submit" />
+        </form>
+      </div>
+      <!-- form ends -->
+    </div>
+  </body>
+</html>

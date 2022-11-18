@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: red;
+  font-size: medium;
+  margin: 5px 0;
+}
+.container {
+  width: 100%;
+  background-color: rgb(173, 176, 179);
+}
+/* form starts */
+.form {
+  width: 50%;
+  padding: 20px;
+}
+.field {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+}
+.field label {
+  width: 24%;
+  display: inline-block;
+}
+.field input {
+  width: 75%;
+  height: 25px;
+  padding: 15px 10px;
+}
+.gender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 10px 0px;
+}
+.gender label{
+  width: 7%
+}
+.genderval{
+  width: 75%;
+}
+.genderval label, .genderval input{
+  display: inline-block; 
+}
+.field.gender div {
+  width: 75%;
+  display: flex;
+  justify-content: left;
+}
+.field.gender div input {
+  display: inline-block;
+  width: 40px;
+}
+.qual label {
+  display: inline-block;
+  width: 24%;
+}
+.specialization {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#sp {
+  display: inline-block;
+  width: 25%;
+}
+.specialization .checkbox {
+  width: 75%;
+  display: inline-block;
+}
+#submit {
+  background-color: green;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+/* form ends  */
